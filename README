@@ -1,11 +1,11 @@
 scfdot - Generate a graphviz file of SMF services and dependencies
 
-Solaris 10 features the Service Management Facility (SMF), which starts
-services in dependency order.  Run "man smf" for more information.  scfdot
-reads the service names and dependencies from the Service Configuration
-Facility (SCF) repository and writes a file which the dot program from the
-graphviz package can render into a graph.  You can obtain graphviz from
-http://graphviz.org .
+The Service Management Facility (SMF) is responsible for managing services
+and service start order in the Oracle Solaris operating system. Run
+"man smf" for more information. scfdot reads the service names and
+dependencies from the Service Configuration Facility (SCF) repository
+and writes a file which the dot program from the graphviz package can
+render into a graph.
 
 Once graphviz is installed and dot and cc are on your path, you should be able
 to generate a PostScript file of the dependency graph on your system by
@@ -68,7 +68,3 @@ The files in this package are
 	setpage.awk - awk script which adds commands to a PostScript file
 		      which direct an HP DesignJet 800ps plotter to print the
 		      file in one continuous page.
-
-	snv_24_x86.dot - Sample output file.
-
-	snv_24_x86.ps - Sample graph.
